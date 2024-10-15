@@ -4,7 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from category_encoders import TargetEncoder
 
-def load_and_preprocess_data(filepath):
+
+def load_and_preprocess_data(filepath='Amazon_Returns_Dataset.csv'):
     # Load data
     df = pd.read_csv(filepath)
     
