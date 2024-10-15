@@ -1,0 +1,56 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore cache directories and files
+.cache/
+.pytest_cache/
+*.pytest_cache
+
+# Ignore model checkpoints and weights (if any)
+checkpoints/
+*.h5
+*.ckpt
+*.pb
+
+# Ignore TensorFlow and Keras saved models directories
+saved_model/
+__saved_model__/
+
+# Ignore data files that are not needed for push (optional, adjust as needed)
+# If your project contains large datasets that aren't essential to push:
+# *.csv
+# *.tsv
+# *.json
+
+# Allow only essential data files (if any)
+!data/*.csv   # Allow CSV data files in the 'data' folder
+!data/*.tsv   # Allow TSV data files
+!data/*.json  # Allow JSON data files
+
+# Ignore notebook and other temporary build artifacts
+*.ipynb
+
+# Ignore IDE configuration files
+.vscode/
+.idea/
